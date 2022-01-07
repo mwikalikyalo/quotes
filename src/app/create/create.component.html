@@ -1,0 +1,27 @@
+
+<h2>New Quote</h2>
+<form #newquote= ngForm>
+  <!--name-->
+    <label for="name">Name</label><br>
+    <input type="text" name="name" placeholder="Enter Name">
+    <br><br>
+  <!--quote-->
+    <label for="exampleFormControlTextarea1" class="form-label">Quote</label><br>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" cols="36"></textarea>
+    <br><br>
+  <!--category-->
+    <label for="exampleDataList" class="form-label">Category</label><br>
+    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+    <datalist id="datalistOptions">
+      <option value="Love">
+      <option value="Age">
+      <option value="Religion">
+      <option value="Finances">
+      <option value="Mental Health">
+    </datalist>
+    <br><br>
+  <!--date-->
+    <label for="date" class="form-label">Date</label><br>
+    <input type="date" name="date" placeholder="Date written">
+</form>
+
