@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-create',
@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateComponent implements OnInit {
   title = "New Quote";
-  newQuote(item:any): void{
-    console.warn(item);
+  getData(data:NgForm): void{
+      console.warn(data)
   }
-
+ 
   constructor() { }
 
   ngOnInit(): void {

@@ -7,12 +7,16 @@ import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CreateComponent } from './create/create.component';
 import { FormsModule} from '@angular/forms';
+import { FormComponent } from './form/form.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CreateComponent
+    CreateComponent,
+    FormComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,

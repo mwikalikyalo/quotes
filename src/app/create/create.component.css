@@ -1,0 +1,12 @@
+body{
+  background-image: url(../create/images/create.jpg);
+  font-size: 23px;
+  font-weight: 900;
+  color: #011a27;
+}
+h2{
+  text-decoration: underline;
+}
+form{
+  text-align: center;
+}
