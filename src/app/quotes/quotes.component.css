@@ -1,9 +1,13 @@
+body{
+  background-image: url(../quotes/images/quotes.jpg);
+}
 .quote,.quote2{
   box-shadow: 3px 3px 3px 3px;
-  padding: 5px;
+  padding: 3%;
   border: 1px solid #BFBFBF;
-  margin: 10px;
+  margin: 15px;
   text-align: center;
+  background-color: white;
 }
 h2{
   text-decoration: underline;
@@ -14,11 +18,4 @@ h2{
 }
 .icon:hover{
    color: #011a27;
-}
-.quote2{
-  float: right;
-  width: 50%;
-}
-.quote{
-  width: 50%;
 }
