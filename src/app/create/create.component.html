@@ -2,23 +2,23 @@
 <link rel="stylesheet" href="create.component.css">
 <body>
   <h2 class="text-center">New Quote.</h2><br>
-  <!--<form #newquote= "ngForm" (submit)= "getData(newquote.value)">-->
-    <div class="col-6">
+  <form #newquote= "ngForm" (submit)= "getData(newquote.value)">
+    <div class="col">
       <label for="formGroupExampleInput" class="form-label">Name</label>
       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name" ngModel>
     </div>
 
-    <div class="col-6">
+    <div class="col">
       <label for="formGroupExampleInput2" class="form-label">Quote</label>
       <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder" ngModel>
     </div>
 
-    <div class="col-6">
+    <div class="col">
       <label for="formGroupExampleInput" class="form-label">Author</label>
       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name" ngModel>
     </div>
 
-    <div class="col-6">
+    <div class="col">
       <label for="exampleDataList" class="form-label">Category</label><br>
       <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." ngModel>
       <datalist id="datalistOptions">
@@ -30,10 +30,10 @@
       </datalist>
     </div>
     
-    <div class="col-6">
+    <div class="col">
       <label for="date" class="form-label">Date</label><br>
       <input type="date" name="date" placeholder="Date written" ngModel><br><br>
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
-  <!--</form>-->
+  </form>
 </body>
