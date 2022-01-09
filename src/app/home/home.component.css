@@ -1,23 +1,8 @@
+
 body{
-  background-image: url(../home/images/home-quotes.jpg);
-  color: white;
-}
-nav>a{
-  text-decoration: none;
-  color: black;
-  font-size: large;
-  font-weight: 900;  
-}
-#pg-name{
-  font-size: 45px;
-  font-weight: 900;
-  text-decoration: underline;
+  background-image: url(../home/images/quotes.jpg);
 }
 .intro{
-  font-size: 36px;
   font-weight: 900;
-  bottom: 5px;
-  display: block;
-  padding: 5%;
+  font-size: 20px
 }
-

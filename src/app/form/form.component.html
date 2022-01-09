@@ -1,0 +1,37 @@
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="form.component.css">
+
+<body>
+  <div class="questionnaire">
+    <h2 class="text-center">Write A New Quote.</h2>
+      <form class="filled" #quoteForm= "ngForm" (submit)= "getData(quoteForm.value)">
+        <!--Name-->
+        <label for="Name" class="name">Name</label><br>
+        <input type="text" ngModel name="Name" placeholder="Full Name" required> <br><br>
+  
+        <!--Quote-->
+        <label for="quote" class="quote">Quotes</label><br> 
+        <textarea name="message" ngModel rows="5" cols="50" placeholder="New Quote" required></textarea><br><br>
+  
+        <!--Written by-->
+        <label for="name" class="name">Written By</label><br>
+        <input type="text" name="Name" ngModel placeholder="Author" required> <br><br>
+  
+        <!--Date-->
+        <label for="date" class="date">Date</label><br>
+        <input type="date" name="date" ngModel placeholder="date" required> <br><br>
+  
+        <button type="button" class="btn btn-primary">Submit</button>
+      </form>
+
+      <ul>
+        <li>{{userData.name}}</li>
+      </ul>
+  </div> 
+</body>
+
+
+
+
+    
