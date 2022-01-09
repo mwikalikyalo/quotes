@@ -13,8 +13,13 @@ export class FormComponent implements OnInit {
     this.userData=data;
   }
 
+  display: boolean | undefined;
+  toggle(){
+    this.display = !this.display;
+  }
+
   constructor() { }
-  
+
 
   ngOnInit(): void {
   }

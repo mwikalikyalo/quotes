@@ -15,18 +15,21 @@
         <textarea name="message" ngModel rows="5" cols="50" placeholder="New Quote" required></textarea><br><br>
   
         <!--Written by-->
-        <label for="name" class="name">Written By</label><br>
-        <input type="text" name="Name" ngModel placeholder="Author" required> <br><br>
+        <label for="written" class="written">Written By</label><br>
+        <input type="text" name="written" ngModel placeholder="Author" required> <br><br>
   
         <!--Date-->
         <label for="date" class="date">Date</label><br>
         <input type="date" name="date" ngModel placeholder="date" required> <br><br>
   
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" (click)="toggle()">Submit</button>
       </form>
 
       <ul>
-        <li>{{userData.name}}</li>
+        <li *ngIf= "display">{{userData.name}}</li>
+        <li *ngIf= "display">{{userData.quote}}</li>
+        <li *ngIf= "display">{{userData.written}}</li>
+        <li *ngIf= "display">{{userData.date}}</li>
       </ul>
   </div> 
 </body>
