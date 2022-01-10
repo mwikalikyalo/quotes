@@ -17,10 +17,7 @@
   font-size: 50px;  
   padding: 10px;
   margin: 10px;
-}
-
-.thee{
-  background-image: url('/src/assets/quotes-bg.jpg');
+  font-family: 'Molle', cursive;
 }
 
 #two{
@@ -29,6 +26,7 @@
 
 #lol{
   justify-content: center;
+  font-family: 'Molle', cursive;
 }
 
 #cre {
@@ -44,7 +42,6 @@
 }
 
 #small {
-  font-variant: small-caps;
   font-size: 13px;
   align-content: space-around;
 }
@@ -78,6 +75,14 @@
   font-size: 13px;
 }
 
-/* #thee {
-  margin-left: 61px;
-  margin-right: 0px */
+.icons{
+  display: flex;
+  justify-content: space-around;
+  clear: both;
+  font-size: 20px;
+}
+
+.cards{
+  border: 2px solid #f77f00;
+  text-align: center;
+}
