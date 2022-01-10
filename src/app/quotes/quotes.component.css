@@ -1,3 +1,14 @@
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+  width: 100%;
+  height: 80px;
+  background-color: #a8dadc;
+  margin: 0;
+  font-weight: 800;
+}
+
 .jumbotron {
   align-content: center;
   text-align: center;
@@ -10,10 +21,15 @@
 
 #two {
   background-image: url('/assets/huh.jpg');
+  color: #f77f00;
+}
+
+#lol {
+  justify-content: center;
 }
 
 #cre {
-  color: yellow;
+  color: #f4a261;
 }
 
 #crd {
@@ -62,3 +78,6 @@
   font-size: 13px;
 }
 
+/* #thee {
+  margin-left: 61px;
+  margin-right: 0px */

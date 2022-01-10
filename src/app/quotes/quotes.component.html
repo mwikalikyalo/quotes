@@ -1,64 +1,74 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="quotes.component.css">
 
-  <div class="container" id="thee">
-    <div class="jumbotron">
-      <h2>Quotes For You!</h2>
-      <h4>Fun with quotes.</h4>
-    </div>
+  <div class="navbar">
+    <div>Home</div>
+    <div>About</div>
+    <div>Quotes</div>
+    <div>Submit Quote</div>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-4" id="one">
-          <div class="row" id="lol">
-            <h3>Write Your Quote</h3>
+    <div class="container" id="thee">
+      <div class="jumbotron">
+        <h2>Quotes For You!</h2>
+        <h4>Fun with quotes. You get to add your favorite quotes as <br> 
+          well as vote on the ones you like and dislike.</h4>
+      </div>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-4" id="one">
+            <div class="row" id="lol">
+              <h3>Write Your Quote</h3>
+            </div>
+            <hr>
+  
+            <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+            <!--collects user input and triggers an addition of content from addNewQuote event -->
           </div>
-          <hr>
-
-          <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
-          <!--collects user input and triggers an addition of content from addNewQuote event -->
-        </div>
-        <div class="col-8" id="two">
-          <div class="row" id="lol">
-            <h3>Memorable Quotes</h3>
-          </div>
-
-          <div class="row">
-            <div class="card" id="crd" *ngFor='let quote of quotes;let i = index'>
-              
-              <div class="card-title">
-                <h5 font color="black" *ngIf="showDescription">{{quote.name}}</h5></div>
-              
-              <button type="button" (click)="toggleQuote()" class="btn btn-primary">{{showDescription? "Hide": "Show"}} Quote Details</button>
-              
-              <div class="card-body" id="ppp">
-                <p id="{{i}}" appHighlight>{{quote.description}}</p>
-              </div>
-              <div class="card-footer" id="hut" *ngIf="showDescription">
-                <!-- hides/shows votes, submitted by details-->
+          <div class="col-8" id="two">
+            <div class="row" id="lol">
+              <h3>Memorable Quotes</h3>
+            </div>
+  
+            <div class="row">
+              <div class="card" id="crd" *ngFor='let quote of quotes;let i = index'>
                 
-                <div class="row">
-                  <div class="col-4">
-                    <p><app-vote></app-vote></p>
-                    <!-- to show votes from vote app component + deleteQuote form dq details-->
-                  </div>
-                  <div class="col-6" id="small">
-                    <p>Submitted by {{quote.submitter}}, {{quote.completeDate|dateCount}} days ago</p>
-                    <!--calls and displays date count pipe results-->
-                  </div>
-                  <div class="col-2">
-                    <!-- triggers an emit event to delete quote -->
-                    <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                <div class="card-title">
+                  <h5 font color="black" *ngIf="showDescription">{{quote.name}}</h5></div>
+                
+                <button type="button" (click)="toggleQuote()" class="btn btn-primary">{{showDescription? "Hide": "Show"}} Quote Details</button>
+                
+                <div class="card-body" id="ppp">
+                  <p id="{{i}}" appHighlight>{{quote.description}}</p>
+                </div>
+                <div class="card-footer" id="hut" *ngIf="showDescription">
+                  <!-- hides/shows votes, submitted by details-->
+                  
+                  <div class="row">
+                    <div class="col-4">
+                      <p><app-vote></app-vote></p>
+                      <!-- to show votes from vote app component + deleteQuote form dq details-->
+                    </div>
+                    <div class="col-6" id="small">
+                      <p>Submitted by {{quote.submitter}}, {{quote.completeDate|dateCount}} days ago</p>
+                      <!--calls and displays date count pipe results-->
+                    </div>
+                    <div class="col-2">
+                      <!-- triggers an emit event to delete quote -->
+                      <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                    </div>
                   </div>
                 </div>
+  
               </div>
-
             </div>
+  
+  
           </div>
-
-
+  
+  
         </div>
 
 
-      </div>
-
+  
