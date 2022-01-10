@@ -15,9 +15,9 @@ export class QuotesComponent implements OnInit {
         new Quote(4, 'Rahma', 'The Supreme art of war is to subdue the enemy without fighting', 'Sun Tzu', new Date(2012, 8, 17)),
       ];
         
-    showDescription= false;//boolean setting to hide and display
+    showDescription= false;
 
-  addNewQuote(quote: { id: number; completeDate: string | number | Date; }) {
+  addNewQuote(quote: { id: number; completeDate: string | number | Date; }): void {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     quote.completeDate = new Date(quote.completeDate)
