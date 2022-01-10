@@ -9,22 +9,25 @@
   font-weight: 800;
 }
 
-.intro {
+.intro{
   align-content: center;
   text-align: center;
-  background-image: url('/assets/brat.jpg');
-  color: #011a27;
+  color: #023047;
   margin-bottom: 0;
   font-size: 50px;  
-  padding: 5px;
+  padding: 10px;
+  margin: 10px;
 }
 
-#two {
-  background-image: url('/assets/huh.jpg');
+.thee{
+  background-image: url('/src/assets/quotes-bg.jpg');
+}
+
+#two{
   color: #f77f00;
 }
 
-#lol {
+#lol{
   justify-content: center;
 }
 
@@ -38,7 +41,6 @@
   width: 800px;
   margin-bottom: 10px;
   font-style: italic;
-  /* color: yellow; */
 }
 
 #small {
@@ -49,7 +51,6 @@
 
 #ppp {
   padding: 0.1;
-  /* background-image: url('/assets/eight.jpg'); */
   font-size: 18px;
   color: brown;
 }
@@ -64,7 +65,7 @@
   align-content: center;
   text-align: center;
   background-image: url('/assets/free.jpg');
-  color: yellow;
+  color: #277da1;
 }
 
 .btn {
