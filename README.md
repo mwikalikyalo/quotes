@@ -1,27 +1,45 @@
 # Quotes
+This is an angular application to create quotes. 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.1.
+By Winifred Mwikali Kyalo
 
-## Development server
+## Description
+This an angular application where users can create quotes and have those quotes voted on whether the user likes or dislikes them. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Setup/Installation Requirements
+### Requirements
+* Text editor
+* Browser(google chrome)
+* Github
+* Git
+#### Setup
+Clone the repo
+************
+cd to Angular-Quotes folder.
+Run ng serve --open on the terminal.
 
-## Code scaffolding
+## Live link
+Angular-Quotes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## BDD
+The user should be able to;
 
-## Build
+* Create a new quote.
+* Upvote or downvote a quote.
+* Delete a quote.
+* See the number og upvotes and number of downvotes for    each quote.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
+Angular-CLI
 
-## Running unit tests
+## Support and contact details
+winifred.kyalo@student.moringaschool.com
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## License
+This license is underMIT LICENSE 
 
-## Running end-to-end tests
+#### Copyright (c) 2022 Winifred Mwikali Kyalo.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
