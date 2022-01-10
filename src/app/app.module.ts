@@ -1,28 +1,33 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './quote-home/home.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule} from '@angular/forms';
-import { FormComponent } from './quote-form/form.component';
 import { QuotesComponent } from './quotes/quotes.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { HighlightDirective } from './highlight.directive';
+import { QuoteFormComponent } from './quote-form/quote-form.component';
+import { DateCountPipe } from './date-count.pipe';
+import { VoteComponent } from './vote/vote.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    FormComponent,
     QuotesComponent,
-  
+    QuoteDetailsComponent,
+    HighlightDirective,
+    QuoteFormComponent,
+    DateCountPipe,
+    VoteComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
