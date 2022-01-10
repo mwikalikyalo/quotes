@@ -23,12 +23,5 @@ export class DateCountPipe implements PipeTransform {
     }
   }
 }
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
-  }
-
-
-function value(value: any, unknown: any, arg2: any, arg3: any) {
-  throw new Error('Function not implemented.');
-}
+  
 
