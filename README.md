@@ -13,10 +13,10 @@ This an angular application where users can create quotes and have those quotes 
 * Github
 * Git
 #### Setup
-Clone the repo
-************
-cd to Angular-Quotes folder.
-Run ng serve --open on the terminal.
+* Clone the repo
+https://github.com/mwikalikyalo/quotes
+* cd to Angular-Quotes folder.
+* Run ng serve --open on the terminal.
 
 ## Live link
 Angular-Quotes
