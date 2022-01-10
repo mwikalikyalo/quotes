@@ -19,7 +19,7 @@ https://github.com/mwikalikyalo/quotes
 * Run ng serve --open on the terminal.
 
 ## Live link
-[mwikalikyalo.github.io/quotes/]
+Quotes [mwikalikyalo.github.io/quotes/]
 
 ## BDD
 The user should be able to;
